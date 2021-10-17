@@ -1,0 +1,232 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{F297FDAB-E3B1-452F-AA18-6781DAAD259D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>ToyBizApp</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="CoreLibrary\bin\Debug\netcoreapp2.1\CoreLibrary.dll" />
+    <Content Include="CoreLibrary\bin\Debug\netcoreapp2.1\CoreLibrary.pdb" />
+    <Content Include="CoreLibrary\CoreLibrary.csproj" />
+    <Content Include="CoreLibrary\obj\Debug\netcoreapp2.1\CoreLibrary.csproj.FileListAbsolute.txt" />
+    <Content Include="CoreLibrary\obj\Debug\netcoreapp2.1\CoreLibrary.dll" />
+    <Content Include="CoreLibrary\obj\Debug\netcoreapp2.1\CoreLibrary.pdb" />
+    <Content Include="Logic\bin\Debug\netcoreapp2.1\CoreLibrary.dll" />
+    <Content Include="Logic\bin\Debug\netcoreapp2.1\CoreLibrary.pdb" />
+    <Content Include="Logic\bin\Debug\netcoreapp2.1\Logic.dll" />
+    <Content Include="Logic\bin\Debug\netcoreapp2.1\Logic.pdb" />
+    <Content Include="Logic\Logic.csproj" />
+    <Content Include="Logic\obj\Debug\netcoreapp2.1\Logic.csproj.FileListAbsolute.txt" />
+    <Content Include="Logic\obj\Debug\netcoreapp2.1\Logic.dll" />
+    <Content Include="Logic\obj\Debug\netcoreapp2.1\Logic.pdb" />
+    <Content Include="MockData\bin\Debug\netcoreapp2.1\CoreLibrary.dll" />
+    <Content Include="MockData\bin\Debug\netcoreapp2.1\CoreLibrary.pdb" />
+    <Content Include="MockData\bin\Debug\netcoreapp2.1\MockData.dll" />
+    <Content Include="MockData\bin\Debug\netcoreapp2.1\MockData.pdb" />
+    <Content Include="MockData\MockData.csproj" />
+    <Content Include="MockData\obj\Debug\netcoreapp2.1\MockData.csproj.FileListAbsolute.txt" />
+    <Content Include="MockData\obj\Debug\netcoreapp2.1\MockData.dll" />
+    <Content Include="MockData\obj\Debug\netcoreapp2.1\MockData.pdb" />
+    <Content Include="NUnitTestProject1\NUnitTestProject1.csproj" />
+    <Content Include="NUnitTestProject1\obj\Debug\netcoreapp2.1\NUnitTestProject1.csproj.FileListAbsolute.txt" />
+    <Content Include="ToyBizApp\bin\Debug\netcoreapp2.1\CoreLibrary.dll" />
+    <Content Include="ToyBizApp\bin\Debug\netcoreapp2.1\CoreLibrary.pdb" />
+    <Content Include="ToyBizApp\bin\Debug\netcoreapp2.1\Logic.dll" />
+    <Content Include="ToyBizApp\bin\Debug\netcoreapp2.1\Logic.pdb" />
+    <Content Include="ToyBizApp\bin\Debug\netcoreapp2.1\ToyBizApp.dll" />
+    <Content Include="ToyBizApp\bin\Debug\netcoreapp2.1\ToyBizApp.pdb" />
+    <Content Include="ToyBizApp\obj\Debug\netcoreapp2.1\ToyBizApp.csproj.FileListAbsolute.txt" />
+    <Content Include="ToyBizApp\obj\Debug\netcoreapp2.1\ToyBizApp.dll" />
+    <Content Include="ToyBizApp\obj\Debug\netcoreapp2.1\ToyBizApp.pdb" />
+    <Content Include="ToyBizApp\ToyBizApp.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\main" />
+    <None Include=".git\logs\refs\remotes\origin\HEAD" />
+    <None Include=".git\objects\44\57d90409072258d95cd5808a5a658059ecc50e" />
+    <None Include=".git\objects\df\cfd56f444f9ae40e1082c07fe254cc547136cf" />
+    <None Include=".git\objects\e7\6ea853c11c5c59a0b3154df3393ff37e430d7a" />
+    <None Include=".git\objects\ef\81ad7bf3914cbcf785d8df67475cb28f8c79fe" />
+    <None Include=".git\packed-refs" />
+    <None Include=".git\refs\heads\main" />
+    <None Include=".git\refs\remotes\origin\HEAD" />
+    <None Include=".vs\ProjectSettings.json" />
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\ToyBizApp\v15\.suo" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include="CoreLibrary\bin\Debug\netcoreapp2.1\CoreLibrary.deps.json" />
+    <None Include="CoreLibrary\obj\CoreLibrary.csproj.nuget.cache" />
+    <None Include="CoreLibrary\obj\CoreLibrary.csproj.nuget.g.props" />
+    <None Include="CoreLibrary\obj\CoreLibrary.csproj.nuget.g.targets" />
+    <None Include="CoreLibrary\obj\Debug\netcoreapp2.1\CoreLibrary.AssemblyInfoInputs.cache" />
+    <None Include="CoreLibrary\obj\Debug\netcoreapp2.1\CoreLibrary.assets.cache" />
+    <None Include="CoreLibrary\obj\Debug\netcoreapp2.1\CoreLibrary.csproj.CoreCompileInputs.cache" />
+    <None Include="CoreLibrary\obj\Debug\netcoreapp2.1\CoreLibrary.csprojAssemblyReference.cache" />
+    <None Include="CoreLibrary\obj\project.assets.json" />
+    <None Include="CoreLibrary\obj\Release\netcoreapp2.1\CoreLibrary.AssemblyInfoInputs.cache" />
+    <None Include="CoreLibrary\obj\Release\netcoreapp2.1\CoreLibrary.assets.cache" />
+    <None Include="CoreLibrary\obj\Release\netcoreapp2.1\CoreLibrary.csproj.CoreCompileInputs.cache" />
+    <None Include="Logic\bin\Debug\netcoreapp2.1\Logic.deps.json" />
+    <None Include="Logic\obj\Debug\netcoreapp2.1\Logic.AssemblyInfoInputs.cache" />
+    <None Include="Logic\obj\Debug\netcoreapp2.1\Logic.assets.cache" />
+    <None Include="Logic\obj\Debug\netcoreapp2.1\Logic.csproj.CopyComplete" />
+    <None Include="Logic\obj\Debug\netcoreapp2.1\Logic.csproj.CoreCompileInputs.cache" />
+    <None Include="Logic\obj\Debug\netcoreapp2.1\Logic.csprojAssemblyReference.cache" />
+    <None Include="Logic\obj\Logic.csproj.nuget.cache" />
+    <None Include="Logic\obj\Logic.csproj.nuget.g.props" />
+    <None Include="Logic\obj\Logic.csproj.nuget.g.targets" />
+    <None Include="Logic\obj\project.assets.json" />
+    <None Include="Logic\obj\Release\netcoreapp2.1\Logic.AssemblyInfoInputs.cache" />
+    <None Include="Logic\obj\Release\netcoreapp2.1\Logic.assets.cache" />
+    <None Include="Logic\obj\Release\netcoreapp2.1\Logic.csproj.CoreCompileInputs.cache" />
+    <None Include="MockData\bin\Debug\netcoreapp2.1\MockData.deps.json" />
+    <None Include="MockData\obj\Debug\netcoreapp2.1\MockData.AssemblyInfoInputs.cache" />
+    <None Include="MockData\obj\Debug\netcoreapp2.1\MockData.assets.cache" />
+    <None Include="MockData\obj\Debug\netcoreapp2.1\MockData.csproj.CopyComplete" />
+    <None Include="MockData\obj\Debug\netcoreapp2.1\MockData.csproj.CoreCompileInputs.cache" />
+    <None Include="MockData\obj\Debug\netcoreapp2.1\MockData.csprojAssemblyReference.cache" />
+    <None Include="MockData\obj\MockData.csproj.nuget.cache" />
+    <None Include="MockData\obj\MockData.csproj.nuget.g.props" />
+    <None Include="MockData\obj\MockData.csproj.nuget.g.targets" />
+    <None Include="MockData\obj\project.assets.json" />
+    <None Include="MockData\obj\Release\netcoreapp2.1\MockData.AssemblyInfoInputs.cache" />
+    <None Include="MockData\obj\Release\netcoreapp2.1\MockData.assets.cache" />
+    <None Include="MockData\obj\Release\netcoreapp2.1\MockData.csproj.CoreCompileInputs.cache" />
+    <None Include="NUnitTestProject1\obj\Debug\netcoreapp2.1\NUnitTestProject1.AssemblyInfoInputs.cache" />
+    <None Include="NUnitTestProject1\obj\Debug\netcoreapp2.1\NUnitTestProject1.assets.cache" />
+    <None Include="NUnitTestProject1\obj\Debug\netcoreapp2.1\NUnitTestProject1.csproj.CoreCompileInputs.cache" />
+    <None Include="NUnitTestProject1\obj\Debug\netcoreapp2.1\NUnitTestProject1.csprojAssemblyReference.cache" />
+    <None Include="NUnitTestProject1\obj\NUnitTestProject1.csproj.nuget.cache" />
+    <None Include="NUnitTestProject1\obj\NUnitTestProject1.csproj.nuget.g.props" />
+    <None Include="NUnitTestProject1\obj\NUnitTestProject1.csproj.nuget.g.targets" />
+    <None Include="NUnitTestProject1\obj\project.assets.json" />
+    <None Include="NUnitTestProject1\obj\Release\netcoreapp2.1\NUnitTestProject1.AssemblyInfoInputs.cache" />
+    <None Include="NUnitTestProject1\obj\Release\netcoreapp2.1\NUnitTestProject1.assets.cache" />
+    <None Include="NUnitTestProject1\obj\Release\netcoreapp2.1\NUnitTestProject1.csproj.CoreCompileInputs.cache" />
+    <None Include="README.md" />
+    <None Include="ToyBizApp\bin\Debug\netcoreapp2.1\ToyBizApp.deps.json" />
+    <None Include="ToyBizApp\bin\Debug\netcoreapp2.1\ToyBizApp.runtimeconfig.dev.json" />
+    <None Include="ToyBizApp\bin\Debug\netcoreapp2.1\ToyBizApp.runtimeconfig.json" />
+    <None Include="ToyBizApp\obj\Debug\netcoreapp2.1\ToyBizApp.AssemblyInfoInputs.cache" />
+    <None Include="ToyBizApp\obj\Debug\netcoreapp2.1\ToyBizApp.assets.cache" />
+    <None Include="ToyBizApp\obj\Debug\netcoreapp2.1\ToyBizApp.csproj.CopyComplete" />
+    <None Include="ToyBizApp\obj\Debug\netcoreapp2.1\ToyBizApp.csproj.CoreCompileInputs.cache" />
+    <None Include="ToyBizApp\obj\Debug\netcoreapp2.1\ToyBizApp.csprojAssemblyReference.cache" />
+    <None Include="ToyBizApp\obj\project.assets.json" />
+    <None Include="ToyBizApp\obj\Release\netcoreapp2.1\ToyBizApp.AssemblyInfoInputs.cache" />
+    <None Include="ToyBizApp\obj\Release\netcoreapp2.1\ToyBizApp.assets.cache" />
+    <None Include="ToyBizApp\obj\Release\netcoreapp2.1\ToyBizApp.csproj.CoreCompileInputs.cache" />
+    <None Include="ToyBizApp\obj\ToyBizApp.csproj.nuget.cache" />
+    <None Include="ToyBizApp\obj\ToyBizApp.csproj.nuget.g.props" />
+    <None Include="ToyBizApp\obj\ToyBizApp.csproj.nuget.g.targets" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CoreLibrary\IDataProvider.cs" />
+    <Compile Include="CoreLibrary\obj\Debug\netcoreapp2.1\CoreLibrary.AssemblyInfo.cs" />
+    <Compile Include="CoreLibrary\obj\Debug\netcoreapp2.1\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="CoreLibrary\obj\Debug\netcoreapp2.1\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="CoreLibrary\obj\Debug\netcoreapp2.1\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="CoreLibrary\obj\Release\netcoreapp2.1\CoreLibrary.AssemblyInfo.cs" />
+    <Compile Include="CoreLibrary\Product.cs" />
+    <Compile Include="Logic\BizLogic.cs" />
+    <Compile Include="Logic\DiscountManager.cs" />
+    <Compile Include="Logic\Mapper.cs" />
+    <Compile Include="Logic\obj\Debug\netcoreapp2.1\Logic.AssemblyInfo.cs" />
+    <Compile Include="Logic\obj\Debug\netcoreapp2.1\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="Logic\obj\Debug\netcoreapp2.1\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="Logic\obj\Debug\netcoreapp2.1\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Logic\obj\Release\netcoreapp2.1\Logic.AssemblyInfo.cs" />
+    <Compile Include="Logic\ProductDTO.cs" />
+    <Compile Include="Logic\SortExtension.cs" />
+    <Compile Include="Logic\SortType.cs" />
+    <Compile Include="MockData\MockoDB.cs" />
+    <Compile Include="MockData\obj\Debug\netcoreapp2.1\MockData.AssemblyInfo.cs" />
+    <Compile Include="MockData\obj\Debug\netcoreapp2.1\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="MockData\obj\Debug\netcoreapp2.1\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="MockData\obj\Debug\netcoreapp2.1\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="MockData\obj\Release\netcoreapp2.1\MockData.AssemblyInfo.cs" />
+    <Compile Include="NUnitTestProject1\obj\Debug\netcoreapp2.1\NUnitTestProject1.AssemblyInfo.cs" />
+    <Compile Include="NUnitTestProject1\obj\Debug\netcoreapp2.1\NUnitTestProject1.Program.cs" />
+    <Compile Include="NUnitTestProject1\obj\Debug\netcoreapp2.1\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="NUnitTestProject1\obj\Debug\netcoreapp2.1\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="NUnitTestProject1\obj\Debug\netcoreapp2.1\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="NUnitTestProject1\obj\Release\netcoreapp2.1\NUnitTestProject1.AssemblyInfo.cs" />
+    <Compile Include="NUnitTestProject1\obj\Release\netcoreapp2.1\NUnitTestProject1.Program.cs" />
+    <Compile Include="NUnitTestProject1\UnitTest1.cs" />
+    <Compile Include="ToyBizApp\obj\Debug\netcoreapp2.1\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="ToyBizApp\obj\Debug\netcoreapp2.1\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="ToyBizApp\obj\Debug\netcoreapp2.1\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="ToyBizApp\obj\Debug\netcoreapp2.1\ToyBizApp.AssemblyInfo.cs" />
+    <Compile Include="ToyBizApp\obj\Release\netcoreapp2.1\ToyBizApp.AssemblyInfo.cs" />
+    <Compile Include="ToyBizApp\Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\objects\pack\" />
+    <Folder Include=".git\refs\tags\" />
+    <Folder Include="CoreLibrary\bin\Release\netcoreapp2.1\" />
+    <Folder Include="Logic\bin\Release\netcoreapp2.1\" />
+    <Folder Include="MockData\bin\Release\netcoreapp2.1\" />
+    <Folder Include="NUnitTestProject1\bin\Debug\netcoreapp2.1\" />
+    <Folder Include="NUnitTestProject1\bin\Release\netcoreapp2.1\" />
+    <Folder Include="ToyBizApp\bin\Release\netcoreapp2.1\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
