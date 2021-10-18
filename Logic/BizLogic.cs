@@ -6,7 +6,7 @@ using System.Linq;
 namespace Logic
 {
     /// <summary>
-    /// Toy busines logic engine
+    /// Toy business logic engine
     /// </summary>
     public class BizLogic
     {

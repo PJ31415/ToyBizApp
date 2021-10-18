@@ -11,9 +11,9 @@ namespace CoreLibrary
         public string Name { get; set; }
         /// <summary>
         /// Our initial price.
-        /// Stored in perfect data type for financial information (joke), but sufficient for toy app.
+        /// In the end type may depend on data sources we use.
         /// </summary>
-        public double Price { get; set; }
+        public decimal Price { get; set; }
         public string Description { get; set; }
         public DateTime LastModified { get; set; }
     }

@@ -7,7 +7,7 @@ namespace Logic
         public ProductDTO ApplyDiscount(ProductDTO product)
         {
             if (product == null) throw new ArgumentNullException(nameof(product));
-            product.Discount = product.Name.Length / 10.0;
+            product.Discount = product.Name.Length / 10.0M;
             return product;
         }
     }

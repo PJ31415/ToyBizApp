@@ -19,8 +19,8 @@ namespace Tests
             var discounted = manager.ApplyDiscount(product);
             Assert.AreSame(product, discounted);
             Assert.AreEqual(product.Price, discounted.Price);
-            Assert.AreEqual(992, discounted.FinalPrice, 1e-10);
-            Assert.AreEqual(0.5, discounted.Discount, 1e-10);
+            Assert.AreEqual(992, discounted.FinalPrice);
+            Assert.AreEqual(0.5M, discounted.Discount);
         }
 
         [Test]

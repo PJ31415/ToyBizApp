@@ -83,7 +83,7 @@ namespace ToyBizApp
             Console.WriteLine("a - sort products by name A-Z");
             Console.WriteLine("z - sort products by name Z-A");
             Console.WriteLine("s - sort products by price descending");
-            Console.WriteLine("s - sort products by price ascending");
+            Console.WriteLine("x - sort products by price ascending");
             Console.WriteLine("q - quit application");
             Console.WriteLine("h - show help");
         }

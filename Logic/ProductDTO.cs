@@ -7,9 +7,9 @@
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public double Price { get; set; }
-        public double Discount { get; set; } = 0;
-        public double FinalPrice { get => this.Price * (1 - this.Discount); }
+        public decimal Price { get; set; }
+        public decimal Discount { get; set; } = 0;
+        public decimal FinalPrice { get => this.Price * (1 - this.Discount); }
         public string Description { get; set; }
     }
 }
