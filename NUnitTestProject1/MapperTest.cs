@@ -1,6 +1,6 @@
-using NUnit.Framework;
-using Logic;
 using CoreLibrary;
+using Logic;
+using NUnit.Framework;
 using System;
 
 namespace Tests

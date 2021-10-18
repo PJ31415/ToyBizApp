@@ -39,7 +39,7 @@ namespace ToyBizApp
         private static void ProgramLoop(BizLogic logic)
         {
             ShowHelp();
-            var sort = SortType.Expensive;
+            var sort = SortType.PriceDescending;
             do
             {
                 Console.WriteLine("{0,-18} {1,-12} {2,-12}!", "Name", "Price", "Super offer");
@@ -53,19 +53,22 @@ namespace ToyBizApp
                 switch (key.Key)
                 {
                     case ConsoleKey.A:
-                        sort = SortType.Alphabetic;
+                        sort = SortType.NameAscending;
                         break;
                     case ConsoleKey.H:
                     case ConsoleKey.Help:
                         ShowHelp();
                         break;
                     case ConsoleKey.S:
-                        sort = SortType.Expensive;
+                        sort = SortType.PriceDescending;
+                        break;
+                    case ConsoleKey.X:
+                        sort = SortType.PriceAscending;
                         break;
                     case ConsoleKey.Q:
                         return;
                     case ConsoleKey.Z:
-                        sort = SortType.InverseAlphabetic;
+                        sort = SortType.NameDescending;
                         break;
                     default:
                         Console.WriteLine("Unknown command");
@@ -79,7 +82,8 @@ namespace ToyBizApp
             Console.WriteLine("Use following keys to ");
             Console.WriteLine("a - sort products by name A-Z");
             Console.WriteLine("z - sort products by name Z-A");
-            Console.WriteLine("s - sort products by price");
+            Console.WriteLine("s - sort products by price descending");
+            Console.WriteLine("s - sort products by price ascending");
             Console.WriteLine("q - quit application");
             Console.WriteLine("h - show help");
         }
@@ -98,7 +102,7 @@ namespace ToyBizApp
             //  or just listing all and parsing index from ReadLine
             dataProviders = dataProviders.Take(10).ToList();
             Console.WriteLine("Please select data provider:");
-            for (int i = 0; i <dataProviders.Count; i++)
+            for (int i = 0; i < dataProviders.Count; i++)
             {
                 Console.WriteLine("{0} - {1}", i, dataProviders[i].Name);
             }
@@ -180,6 +184,6 @@ namespace ToyBizApp
             NoDataProvider = 123,
             SomeLogicError = 456
         }
-    
+
     }
 }

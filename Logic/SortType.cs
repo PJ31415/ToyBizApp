@@ -2,8 +2,9 @@
 {
     public enum SortType
     {
-        Alphabetic,
-        InverseAlphabetic,
-        Expensive,
+        NameAscending,
+        NameDescending,
+        PriceDescending,
+        PriceAscending
     }
 }

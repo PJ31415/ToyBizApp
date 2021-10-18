@@ -10,11 +10,13 @@ namespace Logic
         {
             switch (sort)
             {
-                case SortType.Expensive:
+                case SortType.PriceDescending:
                     return products.OrderByDescending(p => p.Price);
-                case SortType.Alphabetic:
+                case SortType.PriceAscending:
+                    return products.OrderBy(p => p.Price);
+                case SortType.NameAscending:
                     return products.OrderBy(p => p.Name);
-                case SortType.InverseAlphabetic:
+                case SortType.NameDescending:
                     return products.OrderByDescending(p => p.Name);
                 default:
                     return products;
